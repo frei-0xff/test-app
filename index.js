@@ -3,7 +3,7 @@ const util = require('util');
 const url  = require('url');
 const os   = require('os');
 const hostname = 'localhost';
-const port = 8000;
+const port = 5000;
 
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });

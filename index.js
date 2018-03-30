@@ -15,7 +15,7 @@ http.createServer((req, res) => {
 ${cool()}<br/><br/>
 <table>
 <tr><th>TMP Dir</th><td>${os.tmpDir()}</td></tr>
-<tr><th>Host Name</th><td>${os.hostname()}</td></tr>
+<tr><th>Host Name</th><td><b>${os.hostname()}</b></td></tr>
 <tr><th>OS Type</th><td>${os.type()} ${os.platform()} ${os.arch()} ${os.release()}</td></tr>
 <tr><th>Uptime</th><td>${os.uptime()} ${util.inspect(os.loadavg())}</ td></tr>
 <tr><th>Memory</th><td>total: ${os.totalmem()} free: ${os.freemem()}</ td></tr>

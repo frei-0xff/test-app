@@ -6,6 +6,7 @@ var cool = require('cool-ascii-faces')
 const hostname = '0.0.0.0'
 const port = process.env.PORT || 8000
 
+// sdasdad
 http
   .createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' })
@@ -15,7 +16,6 @@ http
 <body><h1>Operating System Info</h1>
 ${cool()}<br/><br/>
 <table>
-<tr><th>TMP Dir</th><td>${os.tmpDir()}</td></tr>
 <tr><th>Host Name</th><td>${os.hostname()}</td></tr>
 <tr><th>OS Type</th><td>${os.type()} ${os.platform()} ${os.arch()} ${os.release()}</td></tr>
 <tr><th>Uptime</th><td>${os.uptime()} ${util.inspect(os.loadavg())}</ td></tr>
